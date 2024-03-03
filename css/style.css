@@ -16,6 +16,34 @@ img {
     max-width: 100%;
 }
 
+/* font-face */
+@font-face {
+    font-family: "Satoshi";
+    src: local("Satoshi-Regular"),
+    url("/fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("/fonts/Satoshi-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ClashDisplay";
+    src: local("ClashDisplay-Regular"),
+    url("/fonts/ClashDisplay-Regular.woff2") format("woff2"),
+    url("/fonts/ClashDisplay-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+html {
+    font-family: "ClashDisplay";
+    font-weight: 400;
+}
+
+* {
+    font-family: inherit;
+}
+
 /* glob */
 .list-reset {
     margin: 0;
