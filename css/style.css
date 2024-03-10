@@ -36,12 +36,28 @@ img {
 }
 
 html {
-    font-family: "ClashDisplay";
+    font-family: "ClashDisplay", sans-serif;
     font-weight: 400;
 }
 
 * {
     font-family: inherit;
+}
+
+/* variables */
+:root {
+    --font-family: "Satoshi", sans-serif;
+    --second-family: "Clash Display", sans-serif;
+    --bg-color--main: #fff;
+    --bg-color--dark-primary: #2a254b;
+    --bg-color--light-grey: #f9f9f9;
+	--bg-color--primary: #4e4d93;	
+    --text-color--white: #fff;
+    --text-color--dark-primary: #2a254b;
+
+	/* --border-grey: #ebe8f4;
+	--border-dark: #cac6da;
+	--images---dark-chair: #f6f6f6; */
 }
 
 /* glob */
@@ -56,3 +72,24 @@ html {
     padding: 0;
     background-color: transparent;
 }
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 28px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+/* body */
+.body {
+    /* min-width: 320px; */
+    min-width: 390px;
+    font-family: var(--font-family);
+    background-color: var(--bg-color--main);
+}
+
+/* header */
