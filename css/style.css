@@ -24,8 +24,8 @@ img {
 @font-face {
     font-family: "Satoshi";
     src: local("Satoshi-Regular"),
-    url("/fonts/Satoshi-Regular.woff2") format("woff2"),
-    url("/fonts/Satoshi-Regular.woff") format("woff");
+    url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../fonts/Satoshi-Regular.woff") format("woff");
     font-weight: 400;
     font-display: swap;
 }
@@ -33,9 +33,8 @@ img {
 @font-face {
     font-family: "ClashDisplay";
     src: local("ClashDisplay-Regular"),
-    url("/fonts/ClashDisplay-Regular.woff2") format("woff2"),
-    /*url("/fonts/ClashDisplay-Regular.otf") format("otf"),*/
-    url("/fonts/ClashDisplay-Regular.woff") format("woff");
+    url("../fonts/ClashDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Regular.woff") format("woff");
     font-weight: 400;
     font-display: swap;
 }
