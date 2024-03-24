@@ -24,8 +24,8 @@ img {
 @font-face {
     font-family: "Satoshi";
     src: local("Satoshi-Regular"),
-    url("/fonts/Satoshi-Regular.woff2") format("woff2"),
-    url("/fonts/Satoshi-Regular.woff") format("woff");
+    url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../fonts/Satoshi-Regular.woff") format("woff");
     font-weight: 400;
     font-display: swap;
 }
