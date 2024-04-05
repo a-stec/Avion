@@ -154,11 +154,11 @@ html {
     margin-right: 44px;
 }
 
-/* hero */
-
+/* hero ???????????
 .hero__heading {
     font-family: var(--second-family);
 }
+*/
 
 /* features */
 .features {
@@ -168,4 +168,28 @@ html {
 
 .features__content {
     
+}
+
+.features__item {
+    max-width: 235px;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+.listings-new__item {
+    list-style-type: none;
+}
+
+
+
+
+
+
+.listings-popular__item {
+    list-style-type: none;
 }
