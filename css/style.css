@@ -48,10 +48,6 @@ img {
   --text-color--white: #fff;
   --text-color--dark-primary: #2a254b;
   --container-margin: 28px;
-
-  /* --border-grey: #ebe8f4;
-	--border-dark: #cac6da;
-	--images---dark-chair: #f6f6f6; */
 }
 
 html {
@@ -182,20 +178,58 @@ html {
 
 /* hero */
 .hero {
-  padding: 60px 0;
+  padding-block: 60px;
 }
 
 .hero__wrapper {
-  padding: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: var(--bg-color--dark-primary);
 }
 
+.hero__wrapper::after {
+  content: "";
+  display: block;
+  width: 520px;
+  height: 584px;
+  background-image: url("../img/hero-chair.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .hero__content {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
   max-width: 602px;
 }
 
+.hero__heading {
+  margin-bottom: 41px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  color: var(--text-color--white);
+}
 
+.hero__link {
+  padding: 16px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  background: rgba(249, 249, 249, 0.15);
+  color: var(--text-color--white);
+}
 
+.hero__descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--text-color--white);
+}
 
 /* features */
 .features {
