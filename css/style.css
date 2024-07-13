@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
 }
+/*!!!УБРАТЬ*/
+::-webkit-scrollbar {
+  width: 0;
+}
 
 *,
 *::after,
@@ -29,10 +33,8 @@ img {
 @font-face {
   font-family: "Clash Display";
   src: local("ClashDisplay-Regular"),
-    url("/fonts/ClashDisplay-Regular.woff2") format("woff2"),
-    url("/fonts/ClashDisplay-Regular.woff") format("woff");
-  /* url("/fonts/ClashDisplay-Regular.otf") format("otf"), */
-  /* url("/fonts/ClashDisplay-Regular.otf") format("opentype"); */
+    url("../fonts/ClashDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
@@ -179,7 +181,7 @@ html {
   margin-right: 44px;
 }
 
-/* hero */
+/* HERO */
 .hero {
   padding-block: 60px;
 }
@@ -234,7 +236,7 @@ html {
   color: var(--text-color--white);
 }
 
-/* features */
+/* FEATURES */
 .features {
   padding-top: 60px;
   padding-bottom: 86px;
@@ -282,20 +284,117 @@ html {
   color: var( --text-color--dark-primary);
 }
 
-/* listings-new */
+
+
+
+
+/* NEW */
+.listings-new {
+  padding-block: 80px 56px;
+}
+
 .listings-new__heading {
   font-size: 32px;
 }
 
-.listings-new__item {
+.listings-new__content {
+  justify-content: center;
+}
+
+.listings-new__list {
   list-style-type: none;
+  padding: 0;
+}
+
+.listings-new__item {
+  box-sizing: border-box;
+}
+
+.listings-new__subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--dark-primary);
+}
+
+.listings-new__price {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--dark-primary);
+}
+
+.listings-new__link {
+  padding: 16px 32px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  background: rgba(249, 249, 249);
+  color: var(--dark-primary);
 }
 
 
-
-
-
+/* POPULAR */
+.listings-popular {
+  padding-block: 64px 48px;
+}
 
 .listings-popular__item {
   list-style-type: none;
+}
+
+.listings-popular__heading {
+  font-size: 32px;
+}
+
+.listings-popular__content {
+  justify-content: center;
+}
+
+.listings-popular__list {
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+.listings-popular__subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--dark-primary);
+}
+
+.listings-popular__price {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--dark-primary);
+}
+
+.listings-popular__link {
+  padding: 16px 32px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  background: rgba(249, 249, 249);
+  color: var(--dark-primary);
+}
+
+
+/*SIGNUP*/
+.sign-up {
+  padding-block: 52px 65px;
+  background-color: rgba(249, 249, 249);
+}
+
+
+/*TARGET*/
+.target__content {
+  padding-block: 72px 54px;
 }
