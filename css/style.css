@@ -77,7 +77,7 @@ html {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-margin);
+  padding: 0;
   width: 100%;
   max-width: 1280px;
 }
@@ -123,8 +123,8 @@ html {
 }
 
 .header__top {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-inline: 28px;
+  padding-block: 20px;
 }
 
 .header__content {
@@ -260,8 +260,7 @@ html {
 }
 
 .features__subtitle {
-  margin: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
   padding: 0;
   font-family: var(--second-family);
   font-weight: 400;
@@ -281,32 +280,28 @@ html {
 }
 
 
-
-
-
-/* NEW */
-.listings-new {
+/* LISTINGS */
+.listings {
   padding-block: 80px 56px;
 }
 
-.listings-new__heading {
+.listings__heading {
   font-size: 32px;
 }
 
-.listings-new__content {
+.listings__content {
   justify-content: center;
+  row-gap: 35px;
 }
 
-.listings-new__list {
+.listings__list {
   list-style-type: none;
   padding: 0;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.listings-new__item {
-  box-sizing: border-box;
-}
-
-.listings-new__subtitle {
+.listings__subtitle {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 20px;
@@ -314,7 +309,7 @@ html {
   color: var(--dark-primary);
 }
 
-.listings-new__price {
+.listings__price {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -322,7 +317,7 @@ html {
   color: var(--dark-primary);
 }
 
-.listings-new__link {
+.listings__link {
   padding: 16px 32px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -331,57 +326,6 @@ html {
   background: rgba(249, 249, 249);
   color: var(--dark-primary);
 }
-
-
-/* POPULAR */
-.listings-popular {
-  padding-block: 64px 48px;
-}
-
-.listings-popular__item {
-  list-style-type: none;
-}
-
-.listings-popular__heading {
-  font-size: 32px;
-}
-
-.listings-popular__content {
-  justify-content: center;
-}
-
-.listings-popular__list {
-  list-style-type: none;
-  padding: 0;
-  flex-wrap: nowrap;
-}
-
-.listings-popular__subtitle {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  color: var(--dark-primary);
-}
-
-.listings-popular__price {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: var(--dark-primary);
-}
-
-.listings-popular__link {
-  padding: 16px 32px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  background: rgba(249, 249, 249);
-  color: var(--dark-primary);
-}
-
 
 /*SIGNUP*/
 .sign-up {
@@ -432,13 +376,6 @@ html {
 .footer__container {
   color: white;
 }
-
-/*НЕ РАБОТАЕТ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!≈
-.nav__item {
-  text-decoration: none;
-  color: white;
-}
-*/
 
 .form__input::placeholder {
   color: white;
