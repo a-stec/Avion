@@ -173,7 +173,7 @@ html {
   align-items: center;
 }
 
-.nav__item:not(:last-child) {
+.footer__nav-item:not(:last-child) {
   margin-right: 44px;
 }
 
@@ -417,10 +417,42 @@ html {
 
 .footer {
   background-color: var(--bg-color--dark-primary);
+  height: 380px;
 }
 
 .footer__container {
+  padding-inline: 80px;
+  margin: 0;
   color: white;
+}
+
+.footer__top {
+  justify-content: space-between;
+}
+
+.footer__nav-heading {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.footer__nav-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.footer__nav-list {
+  flex-direction: column;
+}
+
+.form__caption {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
 }
 
 /*
@@ -428,13 +460,14 @@ html {
   color: white;
   text-indent: 32px;
 }
+*/
 
 .form__fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
+  height: 56px;
+  width: 627px;
 }
 
+/*
 .form__input {
   height: 56px;
   width: 509px;
@@ -463,7 +496,9 @@ html {
 }
 
 .social__item {
-  height: 24px;
-  width: 24px;
-  padding-inline: 24px;
+  padding-inline: 12px;
+}
+
+.fa-brands {
+  color: white;
 }
