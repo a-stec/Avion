@@ -101,7 +101,7 @@ html {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 24px;
-  line-height: 150%;
+  line-height: 140%;
 }
 
 .descr {
@@ -177,6 +177,10 @@ html {
   margin-right: 44px;
 }
 
+.nav__link {
+  color: #726E8D;
+}
+
 /* HERO */
 .hero {
   padding-block: 60px;
@@ -212,7 +216,7 @@ html {
   margin-bottom: 41px;
   font-weight: 400;
   font-size: 32px;
-  line-height: 150%;
+  line-height: 140%;
   color: var(--text-color--white);
 }
 
@@ -265,7 +269,7 @@ html {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 20px;
-  line-height: 150%;
+  line-height: 140%;
   color: var(--text-color--dark-primary);
 }
 
@@ -286,7 +290,10 @@ html {
 }
 
 .listings__heading {
+  font-family: var(--second-family);
+  font-weight: 400;
   font-size: 32px;
+  color: var(--dark-primary);
 }
 
 .listings__content {
@@ -361,10 +368,30 @@ html {
   color: var(--dark-primary);
 }
 
+.sign-up__input::placeholder {
+  color: var(--bg-color--dark-primary);
+  text-indent: 32px;
+  opacity: .2;
+}
+
 .sign-up__fieldset {
-  margin-top: 72px;
+  border: none;
+  padding: 16px 0 0 0;
+}
+
+.sign-up__input {
   height: 56px;
-  width: 472px;
+  width: 354px;
+  outline: none;
+  border: none;
+  background-color: #F9F9F9;
+}
+
+.sign-up__btn {
+  height: 56px;
+  width: 118px;
+  background-color: #2A254B;
+  color: rgb(255, 255, 255);
 }
 
 /*TARGET*/
@@ -394,6 +421,14 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 50vw;
+}
+
+.target__heading {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--dark-primary);
 }
 
 .target__text {
@@ -454,6 +489,10 @@ html {
   flex-direction: column;
 }
 
+.footer__nav-item {
+  padding-top: 12px;
+}
+
 .form__caption {
   font-family: var(--second-family);
   font-weight: 400;
@@ -467,11 +506,13 @@ html {
 }
 
 .form__fieldset {
-  height: 56px;
-  width: 627px;
+  border: none;
+  padding: 16px 0 0 0;
 }
 
 .form__input {
+  height: 56px;
+  width: 509px;
   outline: none;
   border: none;
   background-color: rgba(255, 255, 255, 0.15);
@@ -484,7 +525,9 @@ html {
 }
 
 .footer__bottom {
+  margin-top: 50px; /*НЕ ПРИДУМАЛ КАК ПО ДРУГОМУ СДЕЛАТЬ ЭТОТ БЛОК ВНИЗУ СТРАНИЦЫ!!!!!!!!!*/
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__bottom:not(.social__item) {
